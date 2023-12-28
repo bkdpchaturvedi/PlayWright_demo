@@ -4,12 +4,15 @@
   "description": "Deployment pipeline with playwright ci",
   "main": "index.js",
   "scripts": {
-    "tests": "playwright test --config=playwright.config.ts --project=chromium"
+    "tests": "playwright test"
   },
   "keywords": [],
   "author": "Chaturvedi",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.5"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.1"
   }
 }
