@@ -1,0 +1,15 @@
+{
+  "name": "gha",
+  "version": "1.0.0",
+  "description": "Deployment pipeline with playwright ci",
+  "main": "index.js",
+  "scripts": {
+    "tests": "playwright test --config=playwright.config.ts --project=chromium"
+  },
+  "keywords": [],
+  "author": "Chaturvedi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.5"
+  }
+}
