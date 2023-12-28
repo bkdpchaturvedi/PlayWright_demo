@@ -16,3 +16,10 @@ jobs:
       - name: npm run tests
         run: npm run tests
         working-directory: gha
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: playwright-report
+          path: playwright-report/
+          working-directory: gha
