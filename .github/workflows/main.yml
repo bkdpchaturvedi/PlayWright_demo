@@ -9,7 +9,10 @@ jobs:
       - uses: actions/setup-node@v3
       - name: install dependencies
         run: npm ci
+        working-directory: gha
       - name: install playwright browsers
         run: npx playwright install --with-deps
+        working-directory: gha
       - name: npm run tests
         run: npm run tests
+        working-directory: gha
